@@ -1,0 +1,46 @@
+<html>
+<head >
+    <title>
+        My Portfolio
+    </title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.15/dist/tailwind.min.css" rel="stylesheet">
+
+    
+   
+</head>
+<body id="grad1">
+    <center><h1 style="padding: 10px;">Rakam Anand</h1></center>
+    
+    <img src="C:\Users\rakam\OneDrive\Desktop\portfolio\IMG_20220627_174918.jpg" >
+    <p >This is Rakam Anand Persuing B.Tech final Year in the Department Computer Science and Engineering.<br>
+        I completed my schooling from <b>Ekashila High School</b> with <b>91%</b>.I finished Intermediate from<br>
+        <b>Sri Gayatri Junior College</b> with <b>97%</b>. <br><br>
+        I have skills regarding the following languages and courses.
+        <div class="list"><ol type="1" >
+            <li>Java</li>
+            <li>python</li>
+            <li>html & Css</li>
+            <li>Mobile Application Development</li>
+            <li>DBMS & SQL</li>
+        </ol>
+    </div>
+    I am ready to work with an esteemed company and give my efforts in Development of that company.<br>
+    To know more about my projects click on the following button.
+    </p>
+    <form action="index2.html" method="post">
+        <input type="submit" value="projects" id="project" class="bg-green-900 rounded-full py-2 px-4 text-white">
+
+    </from><br><br>
+    <button id="resume">Resume</button>
+    <script>
+        document.getElementById("resume").addEventListener("click",function()
+        {
+            var url='https://drive.google.com/file/d/1BFyO3O6XCSfS6mab4StxcK_VcDlW85FY/view?usp=sharing';
+            window.open(url,'_blank');
+        }
+        );
+    </script>
+</body>
+
+</html>
