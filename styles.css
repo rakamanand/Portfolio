@@ -1,56 +1,309 @@
-img{
-    width: 160px;
-    height: 160px;
-    border-radius: 60%;
-    margin-left: auto;
-    margin-right: auto;
+
+html{
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+body{
+    scroll-behavior: smooth;
+    background-color: rgb(5, 5, 61);
+}
+.heading{
+    margin: 0 auto;
+    background-color: rgb(5, 5, 61);
+    border-radius: 20px;
+    max-width: 250px;
+    text-align: center; 
+    color: aqua;
+}
+
+.nav{
+    display:flex;
+    width: 100%;
+    max-height: 40px;
+    left:0;
+    top:0;
+    justify-content: space-between;
+    position: fixed;
+    background-color: transparent;
+    z-index: 20;
+    color: azure;
+    padding: 5px;
+}
+
+nav ul ,nav h3{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 5px 15px;
+}
+
+nav h3{
+    margin-left: 50px;
+}
+
+nav ul li a ,nav h3{
+    color: rgb(240, 232, 232);
+    text-decoration: none;
+    padding: 0px 20px;
     display: block;
 }
 
-#grad1{
-    background-image: linear-gradient(to right,blueviolet,rgb(77, 228, 87));
-    text-align: center;
+nav li a:hover,nav li a.home{
+    color:aqua;
+    border-radius: 5px;
+    transform: scale(1.1);
+}
+.div1{
+    max-width: 600px;
+    padding:40px;
+    margin-left: 200px;
+
 }
 
-.list
-{
-    text-align: center;
-    list-style-position: inside;
+.div2{
+    max-width: 800px;
+    padding: 40px;
+
 }
-th,tr,td{
-    border: 1px solid black;
-    border-collapse: collapse;
-}
-#alter tr:nth-child(even){
-    background-color: aqua;
-}
-#alter tr:nth-child(odd){
-    background-color: rgb(44, 221, 115);
-}
-#alter th{
-    background-color: aquamarine;
-}
-#grad2{
-    background-image: linear-gradient(to right,rgb(105,4,71),rgb(92, 3, 114));
-}
-#register{
-    border: 1px solid black;
-    width: 300px;
-    height:500px;
-    margin-left: 50px;
-    background-color: rgb(209, 205, 94);
-    list-style-position: inside;
-    text-align: left;
+
+#home1{
+    display:flex;
+    color: white;
+    min-height:100vh;
+    margin-top: 60px;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
     
 }
-.box{
-    display: flex;
-    margin-left: auto;
-    margin-right: auto;
+
+.image{
+    border-radius: 50%;
+    width:250px;
+    height:250px;
 }
-#resume{
-    background-color: blueviolet;
-    border-radius: 30px;
-    height: 40px;
+
+.image:hover,.certificates img:hover,#register:hover{
+    transform: scale(1.1);
+    transition-duration: 0.3s;
+}
+
+#about{
+    display:flex;
+    color: white; 
+    min-height:100vh;
+    margin-top: 60px;
+    width: 100%;
+    justify-content: center;
+
+}
+
+table{
+    border-collapse:collapse;
+    text-align: center;
+    color: whitesmoke;
+}
+
+th,td{
+    padding: 20px;
+    border: 2px solid rgb(43, 152, 199);
+}
+
+.certificates{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.certificates img{
+    width: 300px;
+    height: 200px;
+}
+
+#projects{
+    min-height:100vh;
+    margin-top: 60px;
+    width: 100%;
+    padding-top: 60px;    
+}
+
+.prjcts{
+    display: flex;
+    justify-content: flex-start;
+    gap: 40px;
+    padding: 50px;
+    margin-top: 20px;
+}
+
+#register{
+    box-sizing: border-box;
+    border: 1px solid rgb(14, 185, 232);
+    width: 300px;
+    color: rgb(12, 187, 222);
+    height:500px;
+    background-color: transparent;
+    border-radius: 10px;
+    overflow: auto;
+    text-align: left;
+    padding:0px 10px 0px 20px;
+}
+
+#register h3{
+    color: beige;
+    text-align: center;
+    font-size: 30px;
+    font-family:sans-serif;
+}
+#register h4{
+    text-align: center;
+    color: chartreuse;
+}
+
+.icons{
     width: 100px;
+    height:50px;
+    display:inline-flex;
+    justify-content: space-evenly;
+    list-style: none;
+    padding: 0; 
+    margin-top: 30px;   
+}
+
+.icons a{
+    color: #1197e4;
+    text-decoration: none;
+    border-radius: 50%;
+    font-size: 30px;
+}
+#contact{
+    min-height: 100vh;
+    width: 100%;
+    padding: 60px 0px;
+    
+}
+.contactpage{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin-left: 60px;
+    
+    
+}
+.details{
+    max-width: 600px;
+    padding: 30px;
+    margin-left: 80px;
+    margin: 30px;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid #1197e4;
+    border-radius: 10px;
+    
+}
+
+.details label{
+    font-size: 20px;
+    font-weight: bold;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: 15px;
+    color: #01a1fe;
+}
+.details #name,#nmbr,#email {
+    width: 100%;
+    height: 30px;
+    margin: 10px;
+    color: #1197e4;
+    padding: 5px;
+    font-size: 15px;
+    border: 1px solid #1197e4;
+    border-radius: 10px;
+    background-color: transparent;
+}
+.details textarea{
+    width: 100%;
+    height: 300px;
+    background: transparent;
+    border: 1px solid #1197e4;
+    resize: none;
+    overflow:auto;
+    color: #01a1fe;
+    padding-left: 10px;
+    font-size: 15px;
+}
+.data{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+.data input:hover{
+    box-shadow: 0px 0px 2px rgb(227, 209, 207);
+}
+.submit{
+    height: 50px;
+    width: 100px;
+    background-color: transparent;
+    color: #1197e4;
+    margin: 20px auto 0px;
+    padding: 5px;
+}
+.submit-div{
+    margin: 20px auto;
+}
+
+.copyrights{
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: 15px;
+    border: 1px solid #01a1fe;
+}
+.copyrights p{
+    margin: 5px 15px;
+}
+.copyrights a{
+    color: #1197e4;
+    text-decoration: none;
+    border-radius: 50%;
+    font-size: 15px;
+    margin: 5px 15px;
+    padding:5px;
+    border: 1px solid #01a1fe;
+    border-radius: 50%;
+}
+.personal{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    color: #e1e6e9;
+    font-size: 15px;
+    font-weight: 800;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding:10px;
+    margin: 30px;
+    border: 1px solid #01a1fe;
+    border-radius: 10px;
+    max-width: 300px;
+    max-height: 300px;
+
+}
+.personal a{
+    text-decoration: none;
+}
+.personal a:hover{
+    color: pink;
+    transform: scale(1.1);
+}
+.personal i{
+    color: #1197e4;
+    text-decoration: none;
+    border-radius: 50%;
+    font-size: 15px;
+    margin-right: 5px;
+    padding: 5px;
+}
+.personal-icons{
+    display: inline-flex;
 }
