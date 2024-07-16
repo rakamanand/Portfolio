@@ -49,6 +49,7 @@ nav h3{
 nav ul li a ,nav h3{
     color: rgb(240, 232, 232);
     text-decoration: none;
+    text-transform: uppercase;
     padding: 0px 20px;
     display: block;
 }
@@ -57,6 +58,10 @@ nav li a:hover,nav li a.home{
     color:aqua;
     border-radius: 5px;
     transform: scale(1.1);
+}
+.nav-link.active {
+    font-weight: bold;
+    color: aqua; 
 }
 .div1{
     max-width: 600px;
@@ -105,6 +110,7 @@ nav li a:hover,nav li a.home{
 
 table{
     border-collapse:collapse;
+    border-radius: 10px;
     text-align: center;
     color: whitesmoke;
 }
@@ -172,6 +178,9 @@ th,td{
     padding: 0; 
     margin-top: 30px;   
 }
+.icons a:hover{
+    transform: scale(1.1);
+}
 
 .icons a{
     color: #1197e4;
@@ -195,6 +204,7 @@ th,td{
 .details{
     max-width: 600px;
     padding: 30px;
+    padding-bottom: 10px;
     margin-left: 80px;
     margin: 30px;
     display: flex;
@@ -245,7 +255,7 @@ th,td{
     width: 100px;
     background-color: transparent;
     color: #1197e4;
-    margin: 20px auto 0px;
+    margin: 10px auto 0px;
     padding: 5px;
 }
 .submit-div{
