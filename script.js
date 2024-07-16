@@ -9,7 +9,7 @@ document.querySelectorAll('.js-scroll-trigger').forEach(anchor => {
         const startPosition = window.pageYOffset;
         const targetPosition = targetElement.getBoundingClientRect().top + startPosition;
         const distance = targetPosition - startPosition;
-        const duration = 1000; // Duration in ms
+        const duration = 700; // Duration in ms
         let startTime = null;
 
         function animation(currentTime) {
