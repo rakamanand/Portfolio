@@ -344,7 +344,7 @@ th,td{
 }
 
 
-@media (min-width:360px) and (max-width: 767px) {
+@media (min-width:360px) and (max-width: 1200px) {
     .nav{
         background-color:  #053d09;
     }
