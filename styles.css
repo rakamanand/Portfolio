@@ -5,7 +5,7 @@ html{
 }
 body{
     scroll-behavior: smooth;
-    background-color: rgb(5, 5, 61);
+    background-color: #05053d;
 }
 .heading{
     margin: 0 auto;
@@ -19,7 +19,7 @@ body{
 .nav{
     display:flex;
     width: 100%;
-    max-height: 40px;
+    max-height: 150px;
     left:0;
     top:0;
     justify-content: space-between;
@@ -45,6 +45,7 @@ nav ul li {
 
 nav h3{
     margin-left: 50px;
+
 }
 
 nav ul li a ,nav h3{
@@ -89,39 +90,29 @@ nav li a:hover,nav li a.home{
 }
 @keyframes floatRight {
     0%{
-        transform: translateX(-100%);
+        transform: translateY(50%);
         opacity: 0;
     }
     100%{
-        transform: translateX(0);
+        transform: translateY(0);
         opacity: 1;
     }
 }
 
 #home1{
-    animation: floatRight 1.5s ease-out forwards;
+    animation: floatRight 1s ease-out forwards;
     display:flex;
     color: white;
     min-height:100vh;
     margin-top: 60px;
     width: 100%;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
     
 }
-@keyframes floatIn {
-    0%{
-        transform: translateX(100vw);
-        opacity: 0;
-    }
-    100%{
-        transform: translateX(0);
-        opacity: 1;
-    }
-    
-}
+
 .image{
-    animation: floatIn 1.3s ease-out forwards;
+    animation: floatRight 1s ease-out forwards;
     border-radius: 50%;
     width:250px;
     height:250px;
@@ -350,4 +341,73 @@ th,td{
 }
 .personal-icons{
     display: inline-flex;
+}
+
+
+@media (min-width:360px) and (max-width: 767px) {
+    .nav{
+        background-color:  #053d09;
+    }
+    nav ul li {
+        margin: 5px 10px;
+    }
+
+    .nav h3 {
+        margin-left: 10px;
+        left: 0;
+    }
+    #home1 {
+        flex-direction: column;
+        margin-top: 80px;
+    }
+
+    .heading {
+        max-width: 100%;
+    }
+
+    .div1, .div2 {
+        padding: 20px;
+        margin: 5px;
+        max-width: 95%;
+    }
+    .certificates{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+    .certificates img {
+        width: 100%;
+        height: auto;
+        margin: 10px;
+        padding: 10px;
+    }
+
+    #register {
+        width: 100%;
+    }
+
+    .details input, .details textarea {
+        padding: 5px;
+    }
+    .prjcts {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .submit {
+        width: 80px;
+        height: 40px;
+    }
+    .details{
+        margin-left: 0;
+    }
+    .contactpage {
+        grid-template-columns: 1fr;
+    }
+    .personal {
+        max-width: 100%;
+        padding: 10px;
+        margin: 10px;
+    }
 }
