@@ -1,11 +1,12 @@
 
 html{
     box-sizing: border-box;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Arial, sans-serif';
 }
 body{
     scroll-behavior: smooth;
-    background-color: #05053d;
+    /* background-color: #05053d; */
+    background-image: linear-gradient(blue, rgb(221, 141, 31), rgb(139, 57, 145));
 }
 .heading{
     margin: 0 auto;
